@@ -1,0 +1,27 @@
+seller_catalog:
+  input_path: "/home/cloud/ecommerce_seller_recommendation/raw/landing/seller_catalog_dirty.csv"
+  bronze_path: "/home/cloud/ecommerce_seller_recommendation/bronze/seller_catalog/"
+  silver_path: "/home/cloud/ecommerce_seller_recommendation/silver/seller_catalog_hudi/"
+  archive_path: "/home/cloud/ecommerce_seller_recommendation/archives/seller_catalog/"
+
+company_sales:
+  input_path: "/home/cloud/ecommerce_seller_recommendation/raw/landing/company_sales_dirty.csv"
+  bronze_path: "/home/cloud/ecommerce_seller_recommendation/bronze/company_sales/"
+  silver_path: "/home/cloud/ecommerce_seller_recommendation/silver/company_sales_hudi/"
+  archive_path: "/home/cloud/ecommerce_seller_recommendation/archives/company_sales/"
+
+competitor_sales:
+  input_path: "/home/cloud/ecommerce_seller_recommendation/raw/landing/competitor_sales_dirty.csv"
+  bronze_path: "/home/cloud/ecommerce_seller_recommendation/bronze/competitor_sales/"
+  silver_path: "/home/cloud/ecommerce_seller_recommendation/silver/competitor_sales_hudi/"
+  archive_path: "/home/cloud/ecommerce_seller_recommendation/archives/competitor_sales/"
+
+recommendation:
+  seller_catalog_silver: "/home/cloud/ecommerce_seller_recommendation/silver/seller_catalog_hudi/"
+  company_sales_silver: "/home/cloud/ecommerce_seller_recommendation/silver/company_sales_hudi/"
+  competitor_sales_silver: "/home/cloud/ecommerce_seller_recommendation/silver/competitor_sales_hudi/"
+  gold_hudi_path: "/home/cloud/ecommerce_seller_recommendation/gold/seller_recommendations_hudi/"
+  output_csv: "/home/cloud/ecommerce_seller_recommendation/gold/recommendations_csv/seller_recommend_data.csv"
+
+log_file: "/home/cloud/ecommerce_seller_recommendation/logs/pipeline.log"
+quarantine_base: "/home/cloud/ecommerce_seller_recommendation/quarantine/"
