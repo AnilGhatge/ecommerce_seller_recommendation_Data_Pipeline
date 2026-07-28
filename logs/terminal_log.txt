@@ -1,0 +1,195 @@
+    1  cd /tmp
+    2  cat orders.csv
+    3  sudo -i -u postgrase psql
+    4  sudo -i -u postgrace psql
+    5  sudo -i -u postgres psql
+    6  nano data.csv
+    7  cat data.csv
+    8  pwd
+    9  tree -a /home/cloud/hudi_orders
+   10  %docker --version
+   11  docker --version
+   12  [200~chmod +x /home/cloud/ecommerce_seller_recommendation/src/*.sh~
+   13  bash
+   14  chmod +x /home/cloud/ecommerce_seller_recommendation/src/*.sh
+   15  bash
+   16  java -version
+   17  spark-submit --version
+   18  python3 --version
+   19  nc -zv localhost 9092
+   20  [200~kafka-topics.sh --create --bootstrap-server localhost:9092 --partitions 3 --replication-factor 1 --topic ecomm_seller_catalog~
+   21  sudo ss -tlnp | grep -E ':2181|:9092'
+   22  sudo ss -tlnp | grep :2181
+   23  /home/cloud/kafka/bib/zookeeper-server-start.sh -daemon /home/cloud/kafka/config/zookeeper.properties
+   24  /home/cloud/kafka/bin/zookeeper-server-start.sh -daemon /home/cloud/kafka/config/zookeeper.properties
+   25  sudo ss -tlnp | grep :2181
+   26  /home/cloud/kafka/bin/kafka-server.sh -daemon /home/cloud/kafka/config/server.properties
+   27  /home/cloud/kafka/bin/kafka-server-start.sh -daemon /home/cloud/kafka/config/server.properties
+   28  sudo ss -tlnp | grep -E ':2181|:9092'
+   29  bash
+   30  [200~bin/zookeeper-server-start.sh config/zookeeper.properties &~
+   31  sudo ss -tlnp | grep -E '2181|9092'
+   32  kafka-topics.sh --create --bootstrap-server localhost:9092 --partitions 3 --replication-factor 1 --topic ecomm_seller_catalog
+   33  kafka-topics.sh --create --bootstrap-server localhost:9092 --partitions 3 --replication-factor 1 --topic ecomm_company_sales
+   34  kafka-topics.sh --create --bootstrap-server localhost:9092 --partitions 3 --replication-factor 1 --topic ecomm_competitor_sales
+   35  ./bin/kafka-topics.sh --list --bootstrap-server localhost:9092
+   36  cd /home/cloud/kafka/
+   37  ./bin/kafka-topics.sh --list --bootstrap-server localhost:9092
+   38  cd /home/cloud/ecommerce_seller_recommendation/src/
+   39  python3 kafka_producer_streaming.py --config ../config/ecomm_prod.yml
+   40  pip3 install kafka-python
+   41  [200~python3 -c "from kafka import KafkaProducer; print('Kafka Library Verified Successfully')"
+   42  ~exit
+   43  python3 -c "from kafka import KafkaProducer; print('Kafka Library Verified Successfully')"
+   44  python3 kafka_producer_streaming.py --config ../config/ecomm_prod.yml
+   45  pip3 install pyspark==3.5.0
+   46  nano ~/.bashrc
+   47  python3 kafka_producer_streaming.py --config ../config/ecomm_prod.yml
+   48  ls -l /home/cloud/ecommerce_seller_recommendation/config/
+   49  python3 kafka_producer_streaming.py --config ../config/ecom_prod.yml
+   50  /home/cloud/kafka/bin/kafka-topics.sh --bootstrap-server localhost:9092 --describe --topic ecomm_seller_catalog
+   51  bash etl_seller_catalog_spark_submit.sh
+   52  bash
+   53  bin/zookeeper-server-start.sh config/zookeeper.properties &
+   54  netstat -tulpn | grep 2181
+   55  kill -9 3266
+   56  netstat -tulpn | grep 2181
+   57  bin/zookeeper-server-start.sh config/zookeeper.properties &
+   58  jps -l
+   59  [200~netstat -tulpn | grep 2181~
+   60  bash
+   61  sudo netstat -tlnp | grep -E '2181|9092'
+   62  kill -9 3717
+   63  kill -9 7025
+   64  sudo netstat -tlnp | grep -E '2181|9092'
+   65  rm -rf /tmp/kafka-logs /tmp/zookeeper
+   66  [200~./bin/zookeeper-server-start.sh ./config/zookeeper.properties
+   67  ~bash
+   68  ls -l
+   69  ./bin/zookeeper-server-start.sh ./config/zookeeper.properties
+   70  bash
+   71  ./bin/kafka-server-start.sh ./config/server.properties
+   72  netstat -tlnp | grep :2181
+   73  netstat -tlnp | grep :9092
+   74  bash
+   75  netstat -tlnp | grep :2181
+   76  netstat -tlnp | grep :9092
+   77  bin/zookeeper-server-start.sh config/zookeeper.properties &
+   78  bin/kafka-server-start.sh config/server.properties &
+   79  bash
+   80  netstat -tlnp | grep :2181
+   81  netstat -tlnp | grep :9092
+   82  kafka-topics.sh --create --bootstrap-server localhost:9092 --partitions 3 --replication-factor 1 --topic ecomm_seller_catalog
+   83  kafka-topics.sh --create --bootstrap-server localhost:9092 --partitions 3 --replication-factor 1 --topic ecomm_company_sales
+   84  kafka-topics.sh --create --bootstrap-server localhost:9092 --partitions 3 --replication-factor 1 --topic ecomm_competitor_sales
+   85  kafka-topics.sh --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 3 --topic my-new-topic
+   86  kafka-topics.sh --list --bootstrap-server localhost:9092
+   87  cd /home/cloud/ecommerce_seller_recommendation/src/
+   88  python3 kafka_producer_streaming.py --config ../config/ecomm_prod.yml
+   89  python3 kafka_producer_streaming.py --config ../config/ecom_prod.yml
+   90  kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic ecom_seller_catalog --from-beginning
+   91  kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic ecomm_seller_catalog --from-beginning
+   92  python3 kafka_producer_streaming.py --config ../config/ecom_prod.yml
+   93  kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic ecomm_seller_catalog --from-beginning --max-messages 10
+   94  kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic ecomm_company_sales --from-beginning --max-messages 10
+   95  python3 kafka_producer_streaming.py --config ../config/ecom_prod.yml
+   96  kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic ecomm_company_sales --max-messages 5
+   97  kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic ecomm_competitor_sales --max-messages 5
+   98  kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic ecomm_company_sales --max-messages 5
+   99  kafka-run-class.sh kafka.tools.GetOffsetShell --bootstrap-server localhost:9092 --topic ecomm_company_sames
+  100  kafka-get-offsets.sh --bootstrap-server localhost:9092 --topic ecomm_company_sales
+  101  kafka-get-offsets.sh --bootstrap-server localhost:9092 --topic ecomm_competitor_sales
+  102  kafka-get-offsets.sh --bootstrap-server localhost:9092 --topic ecomm_seller_catalog
+  103  kafka-get-offsets.sh --bootstrap-server localhost:9092 --topic ecomm_competitor_sales
+  104  kafka-get-offsets.sh --bootstrap-server localhost:9092 --topic ecomm_company_sales
+  105  kafka-get-offsets.sh --bootstrap-server localhost:9092 --topic ecomm_seller_catalog
+  106  bash
+  107  kafka-get-offsets.sh --bootstrap-server localhost:9092 --topic ecomm_seller_catalog
+  108  kafka-get-offsets.sh --bootstrap-server localhost:9092 --topic ecomm_company_sales
+  109  ss -tlnp | grep :2181
+  110  ss -tlnp | grep :9092
+  111  netstat -tlnp | grep :9092
+  112  bash
+  113  ./consumption_recommendation_spark_submit.sh
+  114  cat /home/cloud/ecommerce_seller_recommendation/logs/pipeline.log
+  115  ls -lh /home/cloud/ecommerce_seller_recommendation/quarantine/company_sales/
+  116  ls -la /home/cloud/ecommerce_seller_recommendation/silver/seller_catalog_hudi/
+  117  head -n 5 /home/cloud/ecommerce_seller_recommendation/gold/recommendations_csv/seller_recommend_data.csv/*.csv
+  118  head -n 5 /home/cloud/ecommerce_seller_recommendation/gold/recommendations_csv/seller_recommend_data.csv
+  119  bash
+  120  rm -rf /tmp/spark-*
+  121  rm -rf /tmp/blockmgr-*
+  122  ./consumption_recommendation_spark_submit.sh
+  123  cat /home/cloud/ecommerce_seller_recommendation/logs/pipeline.log
+  124  ls -la /home/cloud/ecommerce_seller_recommendation/silver/seller_catalog_hudi/
+  125  head -n 5 /home/cloud/ecommerce_seller_recommendation/gold/recommendations_csv/seller_recommend_data.csv/*.csv
+  126  bash
+  127  rm -rf /tmp/spark-*
+  128  rm -rf /tmp/blockmgr-*
+  129  ./consumption_recommendation_spark_submit.sh
+  130  ls -la /home/cloud/ecommerce_seller_recommendation/silver/seller_catalog_hudi/.hoodie/
+  131  cd ../..
+  132  ls -la
+  133  ls -la /home/cloud/ecommerce_seller_recommendation/silver/competitor_sales_hudi/
+  134  ls -la /home/cloud/ecommerce_seller_recommendation/silver/competitor_sales_hudi/.hoodie
+  135  bash
+  136  rm -rf /tmp/spark-*
+  137  rm -rf /tmp/blockmgr-*
+  138  ./consumption_recommendation_spark_submit.sh
+  139  rm -rf /tmp/blockmgr-*
+  140  rm -rf /tmp/spark-*
+  141  ./consumption_recommendation_spark_submit.sh
+  142  rm -rf /tmp/spark-*
+  143  rm -rf /tmp/blockmgr-*
+  144  ./consumption_recommendation_spark_submit.sh
+  145  rm -rf /tmp/spark-*
+  146  rm -rf /tmp/blockmgr-*
+  147  ./consumption_recommendation_spark_submit.sh
+  148  rm -rf /tmp/spark-*
+  149  rm -rf /tmp/blockmgr-*
+  150  ./consumption_recommendation_spark_submit.sh
+  151  rm -rf /tmp/spark-*
+  152  rm -rf /tmp/blockmgr-*
+  153  ./consumption_recommendation_spark_submit.sh
+  154  rm -rf /tmp/spark-*
+  155  rm -rf /tmp/blockmgr-*
+  156  ./consumption_recommendation_spark_submit.sh
+  157  spark-shell --packages org.apache.hudi:hudi-spark3.5-bundle_2.12:0.15.0
+  158  rm -rf /tmp/spark-*
+  159  rm -rf /tmp/blockmgr-*
+  160  ./consumption_recommendation_spark_submit.sh
+  161  rm -rf /tmp/spark-*
+  162  rm -rf /tmp/blockmgr-*
+  163  ./consumption_recommendation_spark_submit.sh
+  164  rm -rf /tmp/spark-*
+  165  rm -rf /tmp/blockmgr-*
+  166  ./consumption_recommendation_spark_submit.sh
+  167  rm -rf /tmp/spark-*
+  168  rm -rf /tmp/blockmgr-*
+  169  ./consumption_recommendation_spark_submit.sh
+  170  rm -rf /tmp/spark-*
+  171  rm -rf /tmp/blockmgr-*
+  172  ./consumption_recommendation_spark_submit.sh
+  173  find /home/cloud/ecommerce_seller_recommendation/silver/ -name "*.parquet" | head -n 3
+  174  rm -rf /tmp/blockmgr-*
+  175  rm -rf /tmp/spark-*
+  176  ./consumption_recommendation_spark_submit.sh
+  177  rm -rf /tmp/spark-*
+  178  rm -rf /tmp/blockmgr-*
+  179  ./consumption_recommendation_spark_submit.sh
+  180  rm -rf /tmp/spark-*
+  181  rm -rf /tmp/blockmgr-*
+  182  ./consumption_recommendation_spark_submit.sh
+  183  rm -rf /tmp/spark-*
+  184  rm -rf /tmp/blockmgr-*
+  185  ./consumption_recommendation_spark_submit.sh
+  186  rm -rf /tmp/spark-*
+  187  rm -rf /tmp/blockmgr-*
+  188  ./consumption_recommendation_spark_submit.sh
+  189  rm -rf /tmp/spark-*
+  190  rm -rf /tmp/blockmgr-*
+  191  ./consumption_recommendation_spark_submit.sh
+  192  cat /home/cloud/ecommerce_seller_recommendation/logs/pipeline.log
+  193  ls -la /home/cloud/ecommerce_seller_recommendation/silver/seller_catalog_hudi/
+  194  head -n 5 /home/cloud/ecommerce_seller_recommendation/gold/recommendations_csv/seller_recommend_data.csv/*.csv
+  195  history > /home/cloud/ecommerce_seller_recommendation/logs/terminal_log.txt
